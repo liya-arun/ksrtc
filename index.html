@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSRTC Live Tracking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bus-front-fill" viewBox="0 0 16 16">
+                    <path d="M16 7a1 1 0 0 1-1 1v3a1 1 0 0 1-1 1h-1V9a1 1 0 0 1-1-1H4a1 1 0 0 1-1 1v5H2a1 1 0 0 1-1-1V8a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.223A8.91 8.91 0 0 1 4 4h8a8.91 8.91 0 0 1 1.777 1H15a1 1 0 0 1 1 1zM3.5 10h9a.5.5 0 0 0 .5-.5V7.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5m-1.875-4C.502 6 0 6.545 0 7.222V11h1V7.222C1 6.83 1.222 6.5 1.625 6.5zM14.375 6.5c.403 0 .625.33.625.722V11h1V7.222C16 6.545 15.498 6 14.875 6.5zM8 4a1 1 0 0 0-1 1v1h2V5a1 1 0 0 0-1-1"/>
+                </svg>
+                KSRTC Live Track
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <select id="route-select" class="form-select"></select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
