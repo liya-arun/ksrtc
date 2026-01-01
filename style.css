@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars from appearing */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    flex-shrink: 0;
+}
+
+#map {
+    flex-grow: 1; /* Allows the map to fill the remaining space */
+    border-top: 1px solid #dee2e6;
+}
+
+/* Style for the route selector dropdown */
+.form-select {
+    min-width: 200px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    color: #495057;
+}
+
+.navbar-brand svg {
+    margin-right: 8px;
+    vertical-align: text-bottom;
+}
+
+/* Customizing Leaflet popups */
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.leaflet-popup-content {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 15px;
+}
+
+.leaflet-popup-tip {
+    background: #fff;
+}
